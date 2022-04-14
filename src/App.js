@@ -2,9 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import { BrowserRouter } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
-import Home from './app/component/pages/Home';
+import Home from './component/pages/Home';
 import { Route } from 'react-router-dom';
-import Signin from './app/component/pages/Signin';
+import Signin from './component/pages/Signin';
 
 function App() {
   return (
