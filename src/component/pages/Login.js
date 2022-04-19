@@ -1,16 +1,16 @@
 import React from 'react';
 import Footer from '../dependencies/Footer';
 import Header from '../dependencies/Header';
-import SignInMain from '../dependencies/SignIn/SignInMain';
+import LoginMain from '../dependencies/Login/LoginMain';
 
-const Signin = () => {
+const Login = () => {
     return (
         <div>
             <Header />
-            <SignInMain />
+            <LoginMain />
             <Footer />
         </div>
     );
 };
 
-export default Signin;
+export default Login;

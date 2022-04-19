@@ -17,16 +17,16 @@ const Header = () => {
     }
 
     return (
-        <nav class="main-nav">
-      <div class="main-nav-logo" onClick={goToHome}>
+        <nav className="main-nav">
+      <div className="main-nav-logo" onClick={goToHome}>
         <img
-          class="main-nav-logo-image"
+          className="main-nav-logo-image"
           src={Logo}
           alt="Argent Bank Logo"
         />
-        <h1 class="sr-only">Argent Bank</h1>
+        <h1 className="sr-only">Argent Bank</h1>
       </div>
-        <div class="main-nav-item" onClick={goToSignIn}>
+        <div className="main-nav-item" onClick={goToSignIn}>
         <FontAwesomeIcon className = "fa fa-user-circle " icon={faUserCircle} />
           Sign In
         </div>
