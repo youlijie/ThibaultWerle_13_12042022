@@ -7,6 +7,7 @@ Route,
 import Dashboard from './component/pages/Dashboard';
 import Home from './component/pages/Home';
 import Login from './component/pages/Login';
+import Swagger from './component/pages/Swagger';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route  path = "/dashboard" element = {<PrivateRoute><Dashboard /></PrivateRoute>} />
+      <Route path= "/apidoc" element ={<Swagger />} />
     </Routes>
     </BrowserRouter>
   );
