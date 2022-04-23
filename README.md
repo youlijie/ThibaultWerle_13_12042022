@@ -1,44 +1,47 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# OPENCLASSROOMS PROJECT 13 - ARGENT BANK
 
-## Available Scripts
+A React app for managing a user Bank Account
 
-In the project directory, you can run:
+## Dependencies
 
-### `npm start`
+- [React](https://reactjs.org/) 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [react-router-dom](https://reactrouter.com/web/guides/quick-start) 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- [React Redux](https://react-redux.js.org/) 
 
-### `npm test`
+- [Reduxjs/toolkit](https://redux-toolkit.js.org/) 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [axios](https://github.com/axios/axios)
 
-### `npm run build`
+- [swagger-ui-react](https://www.npmjs.com/package/swagger-ui-react)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Recommended text editor: [Visual Studio Code](https://code.visualstudio.com/)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Installation Dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- You need [Git](https://git-scm.com/) to clone the repository
 
-### `npm run eject`
+- You need [Node](https://nodejs.org/en/) to run the `npm` commands
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Or you need [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable) to run `yarn` commands
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Launch the project
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+to start this project use this backend at :
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API
 
-## Learn More
+use backend read me to lauch it at port 3001.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Now you ca install dependency soft with the following command :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `npm i` 
+
+and start it with 
+
+### `npm start `
+
+if you use the following path you have a swagger documentation for the future API
+
+http://localhost:3000/apidoc
