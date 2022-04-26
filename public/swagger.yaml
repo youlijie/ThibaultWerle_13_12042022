@@ -33,13 +33,13 @@ paths:
           description: Invalid Fields
         '500':
           description: Internal Server Error
-  /user/Transactions:
+  /user/accounts:
      post:
       security:
         - Bearer: []
       tags:
         - User Acount
-      summary: Transactions list
+      summary: Account list
       description: API for transaction
       parameters:
         - in: header
@@ -53,12 +53,12 @@ paths:
         '200':
           description: User transactions retrieved success
           schema:
-            $ref: '#/definitions/Transactions'
+            $ref: '#/definitions/Accounts'
         '400':
           description: Invalid Fields
         '500':
           description: Internal Server Error
-  /user/Transactions/allTransactions/{accountId}:
+  /user/accounts/{accountId}/transactions:
     post:
       security:
         - Bearer: []
@@ -83,12 +83,12 @@ paths:
         '200':
           description: User transactions retrieved success
           schema:
-            $ref: '#/definitions/AcountTransactions'
+            $ref: '#/definitions/AccountTransactions'
         '400':
           description: Invalid Fields
         '500':
           description: Internal Server Error
-  /user/Transactions/allTransactions/{accountId}/arrayTransaction/{transactionId}/atributes :
+  /user/accounts/{accountId}/transactions/{transactionId} :
     put:
       security:
           - Bearer: []
@@ -117,14 +117,14 @@ paths:
           description: Update user transactions attributes
           required: true
           schema:
-            $ref: '#/definitions/TransactionAtributes'
+            $ref: '#/definitions/TransactionAttributes'
       produces:
         - application/json
       responses:
         '200':
           description: transaction retrieved success
           schema:
-            $ref: '#/definitions/Transactions'
+            $ref: '#/definitions/Accounts'
         '400':
           description: Invalid Fields
         '500':
@@ -148,20 +148,20 @@ definitions:
     properties:
       token:
         type: string
-  Transactions:
+  Accounts:
     properties:
-      allTransactions : 
+      accounts : 
         type: array
         description : array with all users acount transactions
         items: 
-          $ref: "#/definitions/AcountTransactions"
-  AcountTransactions :
+          $ref: "#/definitions/AccountTransactions"
+  AccountTransactions :
     type : object
     properties:        
       accountId: 
         type: number
-        description: acount id
-      arrayTransaction: 
+        description: account id
+      transactions: 
         type: array
         description: array with  transactions
         items:
@@ -188,9 +188,9 @@ definitions:
       transactionType: 
         type: string
         description: transaction type
-      atributes: 
-        $ref : '#/definitions/TransactionAtributes'
-  TransactionAtributes:
+      attributes: 
+        $ref : '#/definitions/TransactionAttributes'
+  TransactionAttributes:
     type : object
     properties:
       category: 
